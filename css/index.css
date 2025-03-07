@@ -186,7 +186,6 @@ h2 {
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 .card-stock{
     border-radius: 25px;
@@ -298,6 +297,7 @@ h2 {
     }
     .stock-section{
         width: 90%;
+        flex-wrap: wrap;
     }
     .card-stock{
         width: 100%;
