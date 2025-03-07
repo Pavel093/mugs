@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создай свою уникальную кружку</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <section class="one-page">
+        <section class="one-section" id="one-section">
+            <div class="candy-container"></div>
+            <div class="one-column">
+                <h1>Закажи уникальную <br> кружку</h1>
+                <a href="/">купить</a>
+            </div>
+            <div class="two-column">
+                <img src="assets/mug.png" alt="mug">
+            </div>
+            <p class="background-text">кружк<span>и</span></p>
+        </section>
+        
+        <article class="two-section">
+            <section>
+                <div class="image-column">
+                    <img src="assets/images/price.svg" alt="price">
+                </div>
+                <div class="text-column">
+                    <h3>Выгодные цены</h3>
+                    <p>Дешевле чем на маркетплейсах</p>
+                </div>
+            </section>
+            <section>
+                <div class="image-column">
+                    <img src="assets/images/delivery.svg" alt="delivery">
+                </div>
+                <div class="text-column">
+                    <h3>Быстрая доставка</h3>
+                    <p>Работаем со всеми ТК России</p>
+                </div>
+            </section>
+            <section>
+                <div class="image-column">
+                    <img src="assets/images/quality.svg" alt="quality">
+                </div>
+                <div class="text-column">
+                    <h3>Лучшее качество</h3>
+                    <p>Только сертифицированные бренды</p>
+                </div>
+            </section>
+        </article>
+    </section>
+    <section class="two-page">
+        <h2>Примеры наших работ</h2>
+        <div class="swiper-section">
+            <div class="slider-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/mugs/1.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/2.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/3.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/4.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/5.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/6.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/7.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/8.png" alt="mug-image"></div>
+                    <div class="swiper-slide"><img src="assets/images/mugs/9.png" alt="mug-image"></div>
+                </div>
+            </div>
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="three-page">
+        <h2>3D обзор</h2>
+        <iframe src="https://3d-player.ru/constructor/3dkonstruktor_pechati_na_kruzhkakh/create-order?model=4&key=uj6NRu6CNmcm6VcIVKZi" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+    </section>
+</body>
+<script src="js/background.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/background.js"></script>
+    <script>
+        // Инициализация Swiper
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.slider-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    // Настройки для мобильных устройств
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    // Настройки для ПК
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 10
+                    }
+                }
+            });
+        });
+    </script>
+</html>
