@@ -94,7 +94,6 @@
     position: relative;
 }
 
-
 .two-section {
     width: 80%;
     display: flex;
@@ -191,29 +190,30 @@ h2 {
 @media (max-width: 768px) {
     .one-page {
         height: auto;
+        margin-top: 4%;
     }
 
     .one-section {
         flex-direction: column; 
         height: auto; 
-        padding-top: 20px; /* Уменьшаем отступ сверху */
+        padding-top: 20px;
         width: 90%;
     }
 
     .one-column {
-        text-align: center; /* Центрируем текст */
+        text-align: center;
     }
 
     .one-section .two-column {
-        width: 100%; /* Изображение занимает всю ширину */
-        justify-content: center; /* Центрируем изображение */
-        margin-top: 20px; /* Отступ сверху для изображения */
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .one-section .two-column img {
-        width: 100%; /* Изображение занимает всю ширину */
-        max-width: 300px; /* Ограничиваем максимальную ширину */
-        transform: none; /* Убираем трансформацию */
+        width: 100%;
+        max-width: 300px;
+        transform: none;
     }
 
     .background-text{
@@ -234,13 +234,13 @@ h2 {
     }
 
     .two-section section {
-        flex: 1 1 100%; /* Каждая секция занимает всю ширину */
-        flex-direction: column; /* Меняем направление на колонку */
-        text-align: center; /* Центрируем текст */
+        flex: 1 1 100%;
+        flex-direction: column;
+        text-align: center;
     }
 
     .two-section .image-column {
-        margin-bottom: 10px; /* Отступ снизу для изображения */
+        margin-bottom: 10px;
     }
 
     .two-page{
